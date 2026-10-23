@@ -1,0 +1,14 @@
+﻿id,capa,descripcion,tipo,esfuerzo,depende_de,paquete
+G01,Datos,"Estudiante sin fuente autoritativa ni dueno (3 sistemas, 3 cifras)",Gobierno,5,,WP-1 Gobierno del dato
+G02,Datos,"Egresado sin fuente autoritativa ni dueno (3 sistemas, 3 cifras)",Gobierno,5,G01,WP-1 Gobierno del dato
+G03,Datos,Curso/Silabo sin fuente autoritativa para acreditacion,Gobierno,3,G01,WP-1 Gobierno del dato
+G04,Datos,Sin registro de actividades de tratamiento de datos personales,Cumplimiento,3,G01,WP-1 Gobierno del dato
+G05,Negocio,"Seguimiento al egresado depende de encuesta voluntaria, sin proceso",Proceso,3,G02,WP-4 Formalizacion de procesos informales
+G06,Negocio,Atencion de consultas del estudiante sin registro ni trazabilidad,Proceso,4,,WP-4 Formalizacion de procesos informales
+G07,Negocio,Coordinacion curricular de acreditacion corre en hoja de calculo paralela,Proceso,3,G03,WP-4 Formalizacion de procesos informales
+G08,Aplicacion,Integracion Academico-Campus Virtual por proceso nocturno sin confirmacion,Integracion,4,G01,WP-2 Integracion academico-financiera
+G09,Aplicacion,Integracion Academico-Tesoreria no en tiempo real (deuda desactualizada),Integracion,4,G01,WP-2 Integracion academico-financiera
+G10,Aplicacion,Sin portal unico de autoservicio: el estudiante usa 3 sistemas distintos,Experiencia,5,G08;G09,WP-3 Portal de autoservicio del estudiante
+G11,Aplicacion,Repositorio de acreditacion desincronizado del Sistema Academico,Integracion,3,G03;G07,WP-4 Formalizacion de procesos informales
+G12,Tecnologia,Sistema Academico sobre infraestructura sin respaldo verificado,Continuidad,4,,WP-5 Infraestructura y continuidad
+G13,Tecnologia,Plataforma de biblioteca en fin de soporte del proveedor,Continuidad,2,,WP-5 Infraestructura y continuidad

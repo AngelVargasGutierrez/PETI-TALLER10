@@ -1,0 +1,33 @@
+=== Brechas por capa ===
+capa
+Datos         4
+Aplicacion    4
+Negocio       3
+Tecnologia    2
+
+Total de brechas: 13  (minimo exigido: 10)
+
+=== Paquetes de trabajo ===
+                                            brechas  esfuerzo_total
+paquete                                                            
+WP-1 Gobierno del dato                            4              16
+WP-2 Integracion academico-financiera             2               8
+WP-3 Portal de autoservicio del estudiante        1               5
+WP-4 Formalizacion de procesos informales         4              13
+WP-5 Infraestructura y continuidad                2               6
+
+=== Dependencias entre paquetes ===
+WP-1 Gobierno del dato                        <- (sin dependencias)
+WP-2 Integracion academico-financiera         <- ['WP-1 Gobierno del dato']
+WP-3 Portal de autoservicio del estudiante    <- ['WP-2 Integracion academico-financiera']
+WP-4 Formalizacion de procesos informales     <- ['WP-1 Gobierno del dato']
+WP-5 Infraestructura y continuidad            <- (sin dependencias)
+
+=== Secuencia obligada (orden topologico) ===
+1. WP-1 Gobierno del dato
+2. WP-5 Infraestructura y continuidad
+3. WP-2 Integracion academico-financiera
+4. WP-4 Formalizacion de procesos informales
+5. WP-3 Portal de autoservicio del estudiante
+
+Archivo generado: AR03_brechas.csv
